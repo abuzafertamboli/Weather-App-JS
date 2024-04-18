@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="main-container">    
+        <!-- left-side -->
+        <div class="left-side-container">
+            <!-- search-bar -->
+            <form role="search">
+                <div class="search-container">
+                    <input type="search" name="search-bar" id="search-bar" placeholder="Search for cities">
+                    <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </form>
+
+            <div class="container-1">
+                <div class="main-icon">
+                    <img src="#" alt="weather-icon" class="main-weather-icon">
+                </div>
+
+                <div class="sub-container-1">
+                    <h1>
+                        <span class="main-temp"></span><span>&deg;C</span>
+                    </h1>
+                    <h3 class="weather-condition"></h3>
+                </div>
+
+                <div class="horizontal-line"></div>
+
+                <div class="sub-container-2">
+                    <h4 class="date"></h4>
+                    <h3>
+                        <span class="day"></span>,
+                        <span class="time"></span>
+                    </h3>
+                </div>
+
+                <div class="sub-container-3">
+                    <h2 class="city-container">
+                        <span class="city"></span>,
+                        <span class="state"></span>,
+                        <span class="country"></span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- right-side -->
+        <div class="right-side-container">
+            <div class="today-stats">
+                <h3>Today's Stats</h3>
+                <div class="stats-container">
+                    <!-- high temp. -->
+                    <div class="box-1">
+                        <h3>High Temp.</h3>
+                        <h2>
+                            <span class="high-temp"></span><span>&deg;C</span>
+                        </h2>
+                    </div>
+                    <!-- low temp. -->
+                    <div class="box-2">
+                        <h3>Low Temp.</h3>
+                        <h2>
+                            <span class="low-temp"></span><span>&deg;C</span>
+                        </h2>
+                    </div>
+                    <!-- air quality -->
+                    <div class="box-3">
+                        <h3>UV Index</h3>
+                        <h2>
+                            <span class="uv-index"></span>
+                        </h2>
+                    </div>
+                    <!-- humidity -->
+                    <div class="box-4">
+                        <h3>Humidity</h3>
+                        <h2>
+                            <span class="humidity"></span><span>%</span>
+                        </h2>
+                    </div>
+                    <!-- wind -->
+                    <div class="box-5">
+                        <h3>Wind Status</h3>
+                        <h2>
+                            <span class="wind-status"></span><span>km/h</span>
+                        </h2>
+                    </div>
+                    <!-- rain -->
+                    <div class="box-6">
+                        <h3>Chance of Rain</h3>
+                        <h2>
+                            <span class="rain"></span><span>%</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="today-forecast">
+                <h3>Today's Forecast</h3>
+                <div class="forecast-container">
+                    <!-- 6:00 am -->
+                    <div class="box-7">
+                        <h3>6:00 AM</h3>
+                        <div class="icon-1">
+                            <img src="#" alt="weather-icon" class="weather-icon-1">
+                        </div>
+                        <h2>
+                            <span class="temp-1"></span><span>&deg;C</span>
+                        </h2>
+                    </div>
+                    <!-- 9:00 am -->
+                    <div class="box-8">
+                        <h3>9:00 AM</h3>
+                        <div class="icon-2">
+                            <img src="#" alt="weather-icon" class="weather-icon-2">
+                        </div>
+                        <h2>
+                            <span class="temp-2"></span><span>&deg;C</span>
+                        </h2>
+                    </div>
+                    <!-- 12:00 pm -->
+                    <div class="box-9">
+                        <h3>12:00 PM</h3>
+                        <div class="icon-3">
+                            <img src="#" alt="weather-icon" class="weather-icon-3">
+                        </div>
+                        <h2>
+                            <span class="temp-3"></span><span>&deg;C</span>
+                        </h2>
+                    </div>
+                    <!-- 3:00 pm -->
+                    <div class="box-10">
+                        <h3>3:00 PM</h3>
+                        <div class="icon-4">
+                            <img src="#" alt="weather-icon" class="weather-icon-4">
+                        </div>
+                        <h2>
+                            <span class="temp-4"></span><span>&deg;C</span>
+                        </h2>
+                    </div>
+                    <!-- 6:00 pm -->
+                    <div class="box-11">
+                        <h3>6:00 PM</h3>
+                        <div class="icon-5">
+                            <img src="#" alt="weather-icon" class="weather-icon-5">
+                        </div>
+                        <h2>
+                            <span class="temp-5"></span><span>&deg;C</span>
+                        </h2>
+                    </div>
+                    <!-- 9:00 pm -->
+                    <div class="box-12">
+                        <h3>9:00 PM</h3>
+                        <div class="icon-6">
+                            <img src="#" alt="weather-icon" class="weather-icon-6">
+                        </div>
+                        <h2>
+                            <span class="temp-6"></span><span>&deg;C</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
